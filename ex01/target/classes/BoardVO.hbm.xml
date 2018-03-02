@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018. 3. 2 ???? 5:41:21 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.zerock.domain.BoardVO" table="tbl_board">
+        <id name="bno" type="java.lang.Integer">
+            <column name="BNO" />
+            <generator class="increment" />
+        </id>
+        <property name="title" type="java.lang.String">
+            <column name="TITLE" />
+        </property>
+        <property name="content" type="text">
+            <column name="CONTENT" />
+        </property>
+        <property name="writer" type="java.lang.String">
+            <column name="WRITER" />
+        </property>
+        <property name="regdate" type="java.util.Date">
+            <column name="REGDATE" />
+        </property>
+        <property name="viewcnt" type="int">
+            <column name="VIEWCNT" />
+        </property>
+        <property name="replycnt" type="int">
+            <column name="REPLYCNT" />
+        </property>
+    </class>
+</hibernate-mapping>
